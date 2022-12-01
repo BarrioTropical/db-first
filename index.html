@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Db First</title>
+</head>
+<body>
+    <ul>
+        <li>//ID db<br>
+            IDAuto: PK - UNIQUE - MEDIUMINT - NOTNULL - AUTO_INCREMENT</li>
+
+        <li>//codice interno dell’auto<br>
+            internal_code: VARCHAR(6) - UNIQUE - NOTNULL</li>
+
+        <li>//nome modello auto<br>
+            name_model: VARCHAR(30) - NOTNULL</li>
+        
+        <li>//nome modello brand auto<br>
+            brand: VARCHAR(30) - NOTNULL</li>
+    
+        <li>//categoria auto (da corsa, fuoristrada...)<br>
+            categories: VARCHAR(30) - NOTNULL</li>
+    
+        <li> //anno auto<br>
+            year: YEAR - NOTNULL</li>
+    
+        <li>//numero km fatti<br>
+            km_usage: MEDIUMINT - NOTNULL</li>
+   
+        <li>//stato auto (usata, d’epoca, nuova...)<br>
+            status: TEXT</li>
+        
+        <li>//prezzo auto<br>
+            price: DECIMAL - NOT NULL</li>
+        
+        <li> //disponibilità in concessionario<br>
+            available_copies: TINYINT - NOTNULL - DEFAULT (1)</li>
+     
+        <li>//cilindrata auto<br>
+            cilindrata: MEDIUMINT - NOTNULL</li>
+        
+        <li>//cilindrata cavalli<br>
+            cavalli: MEDIUMINT - NOTNULL</li>
+   
+        <li>//tipo di omologazione<br>
+            auto omologazione: VARCHAR(5) - NOTNULL</li>
+    
+        <li>//colore auto<br>
+            color: VARCHAR(30) - NOTNULL</li>
+    
+        <li>//numero posti<br>
+            seats_numb: VARCHAR(1) - NOTNULL</li>
+     
+        <li>//foto auto<br>
+            photo: VARCHAR (20) - NOTNULL - DEFAULT (‘default.jpg’)</li>
+    </ul>
+
+
+    
+</body>
+</html>
